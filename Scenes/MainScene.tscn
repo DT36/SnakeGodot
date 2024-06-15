@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dho3tpi21mj2l"]
+
+[ext_resource type="Script" path="res://Scripts/MainScene.gd" id="1_kjoxa"]
+[ext_resource type="PackedScene" uid="uid://bwr88hb2cetyd" path="res://Scenes/Snake.tscn" id="2_53qi4"]
+[ext_resource type="PackedScene" uid="uid://gp2yoy127eye" path="res://Scenes/Berry.tscn" id="3_a7mnc"]
+
+[node name="MainScene" type="Node2D"]
+script = ExtResource("1_kjoxa")
+snake_scene = ExtResource("2_53qi4")
+berry_scene = ExtResource("3_a7mnc")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
